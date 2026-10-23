@@ -1,0 +1,4 @@
+#Fri Oct 23 18:30:37 ICT 2026
+base.0=/Users/ad/Desktop/tv/launcher-vietnam/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

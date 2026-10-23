@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="920dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#FAF8F5"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn giao diện"
+        android:textColor="#C62828"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Theme 1: Retro Việt Nam -->
+        <LinearLayout
+            android:id="@+id/theme_retro"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:focusable="true"
+            android:background="@drawable/theme_card_unfocused"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <!-- Mini preview mockup -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#EFE8D6"
+                android:orientation="horizontal"
+                android:padding="4dp">
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:background="#C62828" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:background="#FAF7EE" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retro Việt Nam"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/badge_retro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang dùng"
+                android:textSize="11sp"
+                android:textColor="#D32F2F"
+                android:background="#FFCDD2"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Theme 2: Bìa tạp chí -->
+        <LinearLayout
+            android:id="@+id/theme_magazine"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:focusable="true"
+            android:background="@drawable/theme_card_unfocused"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#F4F4F0"
+                android:orientation="horizontal"
+                android:padding="4dp">
+                <View
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:background="#E6AA1E" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:background="#0A3896" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bìa tạp chí"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/badge_magazine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang dùng"
+                android:textSize="11sp"
+                android:textColor="#D32F2F"
+                android:background="#FFCDD2"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Theme 3: Pastel tươi vui -->
+        <LinearLayout
+            android:id="@+id/theme_pastel"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:focusable="true"
+            android:background="@drawable/theme_card_unfocused"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#EDF7F4"
+                android:orientation="horizontal"
+                android:padding="4dp">
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:background="#4DB6AC" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:background="#FF8A65" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pastel tươi vui"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/badge_pastel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang dùng"
+                android:textSize="11sp"
+                android:textColor="#D32F2F"
+                android:background="#FFCDD2"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Theme 4: Sơn mài -->
+        <LinearLayout
+            android:id="@+id/theme_sonmai"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:focusable="true"
+            android:background="@drawable/theme_card_unfocused"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#0D0D11"
+                android:orientation="horizontal"
+                android:padding="4dp">
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:background="#8B0000" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:background="#D4AF37" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sơn mài"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/badge_sonmai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang dùng"
+                android:textSize="11sp"
+                android:textColor="#D32F2F"
+                android:background="#FFCDD2"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trái, phải để chọn. OK để đổi giao diện. Back để đóng."
+        android:textColor="#757575"
+        android:textSize="13sp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

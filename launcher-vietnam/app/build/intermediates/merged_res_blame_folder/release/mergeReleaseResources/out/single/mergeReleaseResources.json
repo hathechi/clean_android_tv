@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/drawable_circle_btn_selector.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/drawable/circle_btn_selector.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/drawable_theme_card_focused.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/drawable/theme_card_focused.xml"
+    },
+    {
+        "merged": "com.vietnam.retrolauncher.app-release-11:/layout_activity_main.xml.flat",
+        "source": "com.vietnam.retrolauncher.app-main-12:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/drawable_ic_wifi.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/drawable/ic_wifi.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/drawable_circle_btn_unfocused.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/drawable/circle_btn_unfocused.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/layout_activity_main.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/font_outfit_regular.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/font/outfit_regular.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/drawable_ic_palette.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/drawable/ic_palette.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/font_outfit_extralight.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/font/outfit_extralight.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/drawable_circle_btn_focused.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/drawable/circle_btn_focused.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/mipmap-xhdpi_ic_launcher.jpg.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/mipmap-xhdpi/ic_launcher.jpg"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/layout_dialog_theme_picker.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/layout/dialog_theme_picker.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/layout_item_app_tile.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/layout/item_app_tile.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/font_outfit_medium.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/font/outfit_medium.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/font_outfit_light.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/font/outfit_light.xml"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/font_outfit.ttf.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/font/outfit.ttf"
+    },
+    {
+        "merged": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-release-11:/drawable_theme_card_unfocused.xml.flat",
+        "source": "/Users/ad/.gradle/daemon/8.9/com.vietnam.retrolauncher.app-main-12:/drawable/theme_card_unfocused.xml"
+    }
+]

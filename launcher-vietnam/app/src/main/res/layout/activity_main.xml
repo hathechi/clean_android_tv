@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE8D6"
+    android:orientation="vertical"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <!-- Top Bar: Greeting & Clock + Buttons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chào bạn"
+                android:textColor="#C62828"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="serif" />
+
+            <TextView
+                android:id="@+id/tv_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15:49:19"
+                android:textColor="#212121"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_theme"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/circle_btn_selector"
+                android:src="@drawable/ic_palette"
+                android:contentDescription="Chọn giao diện"
+                android:focusable="true" />
+
+            <ImageButton
+                android:id="@+id/btn_wifi"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/circle_btn_selector"
+                android:src="@drawable/ic_wifi"
+                android:contentDescription="Mạng Wi-Fi"
+                android:focusable="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Main Content Area: Left Bloc Calendar + Right Widgets -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Left: Tờ lịch Bloc xé tường Việt Nam -->
+        <LinearLayout
+            android:id="@+id/bloc_container"
+            android:layout_width="290dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:background="#FAF7EE"
+            android:elevation="6dp"
+            android:orientation="vertical">
+
+            <!-- Bloc Header (Đỏ truyền thống với 2 lỗ xỏ lịch) -->
+            <RelativeLayout
+                android:id="@+id/bloc_header"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#C62828"
+                android:padding="8dp">
+
+                <View
+                    android:id="@+id/hole_left"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="36dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_btn_unfocused" />
+
+                <TextView
+                    android:id="@+id/tv_bloc_month_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="THÁNG MƯỜI · 2026"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:letterSpacing="0.05" />
+
+                <View
+                    android:id="@+id/hole_right"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="36dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_btn_unfocused" />
+            </RelativeLayout>
+
+            <!-- Bloc Body (Số ngày cực lớn + Thứ) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_bloc_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    android:textColor="#D32F2F"
+                    android:textSize="115sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:includeFontPadding="false" />
+
+                <TextView
+                    android:id="@+id/tv_bloc_weekday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THỨ SÁU"
+                    android:textColor="#212121"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:letterSpacing="0.05" />
+            </LinearLayout>
+
+            <!-- Bloc Footer: Âm lịch & Can Chi -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7CCC8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Âm lịch"
+                        android:textColor="#757575"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/tv_bloc_lunar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14 / 9"
+                        android:textColor="#212121"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:fontFamily="serif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_bloc_canchi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Năm Bính Ngọ\nTháng Mậu Tuất\nNgày Canh Ngọ"
+                    android:textColor="#424242"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    android:lineSpacingExtra="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Right: Mini Calendar + Gold/Petrol + Apps -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Row 1: Mini Calendar (left) + Market Stats (right) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <!-- Mini Calendar Card -->
+                <LinearLayout
+                    android:id="@+id/mini_calendar_card"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:layout_marginEnd="16dp"
+                    android:background="#FAF7EE"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_cal_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tháng 10"
+                            android:textColor="#212121"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:fontFamily="serif" />
+                        <TextView
+                            android:id="@+id/tv_cal_lunar_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="âm lịch tháng 8 và 9"
+                            android:textColor="#757575"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Days of week headers: T2, T3, T4, T5, T6, T7, CN -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="T2" android:gravity="center" android:textStyle="bold" android:textSize="12sp" android:textColor="#424242" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="T3" android:gravity="center" android:textStyle="bold" android:textSize="12sp" android:textColor="#424242" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="T4" android:gravity="center" android:textStyle="bold" android:textSize="12sp" android:textColor="#424242" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="T5" android:gravity="center" android:textStyle="bold" android:textSize="12sp" android:textColor="#424242" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="T6" android:gravity="center" android:textStyle="bold" android:textSize="12sp" android:textColor="#424242" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="T7" android:gravity="center" android:textStyle="bold" android:textSize="12sp" android:textColor="#424242" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="CN" android:gravity="center" android:textStyle="bold" android:textSize="12sp" android:textColor="#D32F2F" />
+                    </LinearLayout>
+
+                    <!-- Calendar Grid Container -->
+                    <LinearLayout
+                        android:id="@+id/calendar_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <!-- Market Stats: Giá vàng & Xăng dầu -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Gold Price Card -->
+                    <LinearLayout
+                        android:id="@+id/card_gold"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:background="#C62828"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ Giá vàng"
+                            android:textColor="#FFD54F"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vàng miếng SJC"
+                                    android:textColor="#FFCDD2"
+                                    android:textSize="11sp" />
+                                <TextView
+                                    android:id="@+id/tv_price_sjc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="142,0"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="serif" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nhẫn 999.9"
+                                    android:textColor="#FFCDD2"
+                                    android:textSize="11sp" />
+                                <TextView
+                                    android:id="@+id/tv_price_ring"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="141,0"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="serif" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Fuel / Petrol Price Card -->
+                    <LinearLayout
+                        android:id="@+id/card_petrol"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#FAF7EE"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Xăng E10"
+                                    android:textColor="#757575"
+                                    android:textSize="11sp" />
+                                <TextView
+                                    android:id="@+id/tv_price_e10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="28.250"
+                                    android:textColor="#212121"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="serif" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="đồng mỗi lít"
+                                    android:textColor="#9E9E9E"
+                                    android:textSize="9sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Xăng E5"
+                                    android:textColor="#757575"
+                                    android:textSize="11sp" />
+                                <TextView
+                                    android:id="@+id/tv_price_e5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="27.700"
+                                    android:textColor="#212121"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="serif" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="đồng mỗi lít"
+                                    android:textColor="#9E9E9E"
+                                    android:textSize="9sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dầu DO"
+                                    android:textColor="#757575"
+                                    android:textSize="11sp" />
+                                <TextView
+                                    android:id="@+id/tv_price_do"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="29.120"
+                                    android:textColor="#212121"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="serif" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="đồng mỗi lít"
+                                    android:textColor="#9E9E9E"
+                                    android:textSize="9sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 2: App Tiles Horizontal Row (Postage Stamp Cards) -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_apps"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+com.vietnam.retrolauncher.app-annotation-experimental-1.1.0-0 /Users/ad/.gradle/caches/8.9/transforms/049747c0025d8178afe6ff1d903d8caa/transformed/annotation-experimental-1.1.0/res
+com.vietnam.retrolauncher.app-customview-poolingcontainer-1.0.0-1 /Users/ad/.gradle/caches/8.9/transforms/05852c1785d6d964b88522df839e0e25/transformed/customview-poolingcontainer-1.0.0/res
+com.vietnam.retrolauncher.app-core-1.7.0-2 /Users/ad/.gradle/caches/8.9/transforms/20edc9854e9670a16e343d9620395888/transformed/core-1.7.0/res
+com.vietnam.retrolauncher.app-recyclerview-1.3.2-3 /Users/ad/.gradle/caches/8.9/transforms/2c856b98b712aed0c149c0de2ce36b86/transformed/recyclerview-1.3.2/res
+com.vietnam.retrolauncher.app-core-ktx-1.5.0-4 /Users/ad/.gradle/caches/8.9/transforms/7df1a3a9dbe8a1cf90bff81641eb508f/transformed/core-ktx-1.5.0/res
+com.vietnam.retrolauncher.app-cardview-1.0.0-5 /Users/ad/.gradle/caches/8.9/transforms/c1915815a90f913344b14a09972369cb/transformed/cardview-1.0.0/res
+com.vietnam.retrolauncher.app-lifecycle-runtime-2.3.1-6 /Users/ad/.gradle/caches/8.9/transforms/c572a10d479bffa00651b1ee9fcb6c40/transformed/lifecycle-runtime-2.3.1/res
+com.vietnam.retrolauncher.app-pngs-7 /Users/ad/Desktop/tv/launcher-vietnam/app/build/generated/res/pngs/release
+com.vietnam.retrolauncher.app-resValues-8 /Users/ad/Desktop/tv/launcher-vietnam/app/build/generated/res/resValues/release
+com.vietnam.retrolauncher.app-packageReleaseResources-9 /Users/ad/Desktop/tv/launcher-vietnam/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.vietnam.retrolauncher.app-packageReleaseResources-10 /Users/ad/Desktop/tv/launcher-vietnam/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.vietnam.retrolauncher.app-release-11 /Users/ad/Desktop/tv/launcher-vietnam/app/build/intermediates/merged_res/release/mergeReleaseResources
+com.vietnam.retrolauncher.app-main-12 /Users/ad/Desktop/tv/launcher-vietnam/app/src/main/res
+com.vietnam.retrolauncher.app-release-13 /Users/ad/Desktop/tv/launcher-vietnam/app/src/release/res

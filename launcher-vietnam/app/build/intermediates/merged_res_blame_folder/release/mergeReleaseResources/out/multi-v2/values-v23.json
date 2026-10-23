@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.vietnam.retrolauncher.app-mergeReleaseResources-9:/values-v23/values-v23.xml",
+            "map": [
+                {
+                    "source": "/Users/ad/.gradle/caches/8.9/transforms/c1915815a90f913344b14a09972369cb/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    }
+                }
+            ]
+        }
+    ]
+}
